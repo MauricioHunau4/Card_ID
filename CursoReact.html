@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=">-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="cursoReact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio Hunau</title>
+</head>
+
+
+<body>
+    <main>
+        <div id="box-container">
+            <div class="flex">
+                <image alt="Me" src="Foto de perfil2.png" class="photo"/>
+                <div class="flex-presentacion">
+                    <h1 id="nombre">Mauricio Hunau</h1>
+                    <h2 id="presentacion">Tengo 22 años, soy de Buenos Aires y vengo a estudiar React.js</h2>
+                    <button onclick="visible()" type="button" id="conoceme">Conoceme!</button>
+                </div>
+            </div>
+            <div id="hidden-container">
+                <h3 id="saber">Lo que se hasta ahora</h3>
+                <div class="list">
+                <ul class="ul">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                </ul>
+                <ul class="ul">
+                    <li>Python</li>
+                    <li>NodeJs</li>
+                    <li>MySQL</li>
+                    <li>C++</li>
+                    <li>Go</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+<script>
+    visible = ()=>{
+        document.getElementById("hidden-container").style.display="block";
+        document.getElementById("hidden-container").style.visibility="visible";
+        document.getElementById("hidden-container").style.animation="fade-down 1s ease-in";
+        document.getElementById("box-container").style.margin="150px auto auto auto";
+    }
+</script>
+
+</html>
